@@ -1,3 +1,5 @@
+
+    
 <!DOCTYPE html>
 <html lang="en">
 
@@ -288,53 +290,12 @@
             color: rgba(211, 12, 111, 1);
             font-size: 3rem;
         }
-        .change_content::after {
-            content: "PHP courses";
-            animation: animate infinite 20s linear;
-        }
-
-        @keyframes animate {
-
-            15% {
-                content: "Python courses";
-                font-color: #000
-            }
-
-            25% {
-                content: "C courses";
-                font-color: rgba(211, 12, 111, 1);
-            }
-
-            40% {
-                content: "C# courses";
-                font-color: #000;
-            }
-
-            55% {
-                content: "Ruby courses";
-                font-color: rgba(211, 12, 111, 1);
-            }
-
-            60% {
-                content: "HTML courses";
-                font-color: #000;
-            }
-
-            75% {
-                content: "C++ courses";
-                font-color: rgba(211, 12, 111, 1);
-            }
-
-            85% {
-                content: "Java courses";
-                font-color: #000;
-            }
-
-            95% {
-                content: "CAMEL courses";
-                font-color: rgba(211, 12, 111, 1);
-                }
-        }
+        
+.jumbotron-heading{
+    display: flex;
+    justify-content: center;
+    color: rgba(211, 12, 111, 1);
+}
     </style>
 </head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -342,6 +303,9 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+<link rel = "icon" href = 
+"https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png" 
+        type = "image/x-icon">
 
 <body>
     <div id="big">
@@ -380,8 +344,22 @@
             </nav>
         </nav>
         <main>
-            <h5>We are known for our </h5>
-            <span class="change_content"></span>
+            <h1 class="jumbotron-heading"><span id="typed"></span></h1> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js" async defer></script>
+    <script>
+        window.onload = function () {
+            console.log("loaded")
+            var typed = new Typed('#typed', {
+                strings: ["Welcome to Tark tecnical", "Learn Python", "Web development", "Learn Coding", "Hacking :>", "and other awesome programming concepts with me "],
+                backSpeed: 15,
+                smartBackspace: true,
+                backDelay: 1200,
+                startDelay: 1000,
+                typeSpeed: 50,
+                loop: true,
+            });
+        };
+    </script>              
             <br><br><br>
             <h5>Search below for my famous courses</h5>
             <input type="text" name="search" placeholder="Search.."><br><br><br><br><br>
@@ -400,7 +378,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <div class="grid">
         <article>
-            <img src="/pix/samples/23m.jpg" alt="Sample photo">
+            <img src="home-img-4.jpg" alt="Sample photo">
             <div class="text">
                 <h3>Free Video Courses</h3>
                 <p>Get your programming career started with these free video courses. Source code is available with all
@@ -409,7 +387,7 @@
             </div>
         </article>
         <article>
-            <img src="/pix/samples/24m.jpg" alt="Sample photo">
+            <img src="home-img-2.jpg" alt="Sample photo">
             <div class="text">
                 <h3>Coding Articles</h3>
                 <p>Some of the latest coding information compiled as coding articles. Keep your programming knowledge up
@@ -418,7 +396,7 @@
             </div>
         </article>
         <article>
-            <img src="/pix/samples/22l.jpg" alt="Sample photo">
+            <img src="home-img-3.jpg" alt="Sample photo">
             <div class="text">
                 <h3>Contact Me</h3>
                 <p>Learn programming from our free courses. Examples are available with these tutorials. You can contact
